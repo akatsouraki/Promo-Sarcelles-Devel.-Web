@@ -1,4 +1,9 @@
 
+VERT = Debut fin
+ROSE = condition
+BLEU = Lecture / Ecriture
+JAUNE = Affectation
+
 
 Exercices
 Algorithme a  Diagramme
