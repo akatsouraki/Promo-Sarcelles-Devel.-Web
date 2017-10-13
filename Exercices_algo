@@ -1,0 +1,77 @@
+
+
+Exercices
+Algorithme a  Diagramme
+Lire B 
+D <- B/3
+Si B>D Alors
+ Ecrire D 
+D<- D+2
+B<- B-1
+Ecrire (B-D)
+Sinon
+Ecrire B
+Si D%2 ==0 Alors 
+  D <- D-3
+ Sinon
+B<- B+3
+Finsi
+Ecrire (B-D)
+Finsi
+Ecrire B, D
+
+
+
+Ex #1  (2 manières différents à faire)  -- Diag. + Algo: 
+1.	Lire une valeur (entier) 
+2.	Afficher des messages différents : 
+a.	Si la valeur est supérieur de zéro : « Numéro positif »
+b.	Si la valeur est égal de zéro : « Zéro»
+c.	Si la valeur est inferieur de zéro : « Numéro négatif »
+
+Ex #2 (2 manières différents à faire)  -- Diag. + Algo: 
+1.	Lire vingt-cinq valeurs (entiers) 
+2.	Calculer et Afficher La moyenne
+
+Ex #3 -- Diag. + Algo: 
+1.	Lire dix valeurs (entiers) 
+2.	Trouver et afficher la valeur MAX et la valeur MIN
+
+Ex #4 -- Diag. + Algo : 
+1.	Lire la distance (en Km) qui a été parcourue une voiture
+2.	Lire les litres de gaz consommés pour la distance
+3.	Calculer et Afficher la consommation moyenne L / 100 Km (litres
+pour 100 kilomètres).
+
+Ex #5 -- Diag. + Algo : 
+1.	Imprimer les nombres entre 1 et 20 sur l’écran 
+
+Ex #6  -- Diag. + Algo :
+L'impôt sur le revenu des salariés est déterminé sur la base de son revenu selon l'échelle d'imposition suivante : 
+Revenu				Taxes
+0 < x <= 8000 EU 		0 
+8000 < x <= 15000 EU 		(x- 8000) * 0.05 
+15000 < x <= 30000 EU 		350 + (x-15000) * 0.15 
+30000 < x <= 40000 EU 		2600 + (x-30000) * 0.30 
+x > 40000 ΕU 			5600 + (x-40000) * 0.40
+
+a) Lire le revenu de l'employé 
+b) Calculer la taxe (en utilisant la formula)
+c) Afficher la taxe
+
+Ex #7 -- Diag. + Algo : 
+Il était une fois, en Chine un empereur qui avait une passion pour les jeux. Mais un jour, il avait joué tous les jouets et il s'ennuyait. Il a donc demande un jeu avec des règles simples, c’est-à-dire chaque fois que il joue, le jeu est différent et du coup il s’ennuie jamais. Celui qui aurait réussi à faire un tel jeu, il pourrait demander une récompense. Donc, un de ses consultants pensait créer des échecs. L'empereur était ravi et dit: « Qu'est-ce que votre récompense ?  Est-ce que tu veux épouser ma fille et donc mon successeur sur le trône ? », « Non !», le consultant a répondu. « Je veux quelque chose plus simple ! Je veux que tu mettes sur la première de 64 carrés d’échecs un grain de riz, sur la deuxième carré 2 grains de riz, sur la troisième carré 4 grains de riz,  sur la quatrième carré 8 grains, etc. chaque fois en faisant doubler le nombre de grains de riz. Ma récompense sera tout le riz qui sera sur l'échiquier. "Seulement ça?",  l'empereur a dit et a demandé de payer immédiatement le conseiller. Finalement, l'empereur a donné tout qui a eu pour rembourser le consultant (9.223.372.036.854.775.809)
+Créez le diagramme de flux  et puis écrivez un programme en pseudocode qui peut:
+A) calculer le nombre de grains de riz pris par le consultant.
+B) tandis que chaque grain de riz peut peser [en moyenne] environ 0,1 gramme, pour calculer le poids du riz en tonnes.
+C) affichera le message "Le consultant a pris ..... des grains de riz correspondant à ..... tons".
+
+Conception : 
+Pour qu’on calcule le nombre de grains de riz qui a pris, on remarque que pour calculer les grains de riz de chaque carre, il faut utiliser le type 2N-1 
+Pourquoi ?  2me -> 2 (=22-1=21),  3me->4(=23-1=22), 4me ->8(=24-1=23), 5me -> 16(=25-1=24),  …
+Alors, sur la dernière carre – 64me carre,  il y 264-1=263 grains de riz. Du coup, on va calculer la somme :   
+20 (1er carre) + 21 (2me carre) +  22 (3me carre) +  23(4me carre) + 24 (5me carre) +  . . . + 263(64me carre)
+Grains de riz final : 
+9.223.372.036.854.775.809
+[Si on voudrait utiliser un langage de programmation comme Java/ C - on ne pourrait pas calculer ce numéro- du coup, on aurait choisi comme nombre de carres : 31 carres]
+En pseudocode, on garde quand même  le nombre de carres : 64 !  
